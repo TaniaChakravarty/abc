@@ -4,47 +4,21 @@ body{
 	background:#494054;
 }
 
-header{
-	-webkit-transform: rotate(90deg);
-	-moz-transform; rotate(90deg);
-	-ms-transform; rotate(90deg);
-	font-family:Helvetica;
-	font-size:175px;
-	color: #d5848b;
-	font-weight: bold;
-	position: relative;
-	padding: 10px;
-	top: 720px;
-}
-.section{
-	position: relative;
-	top: 1200px;
-	width:100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-.section a{
-	position: absolute;
-	text-align: center;
-	font-family: helvetica, sans-serif;
-	font-size: 50px;
-	bottom: 0px;
-	color: #c84a59;
-	background: #d5848b;
-	padding:20px;
-	margin: 20px;
-	z-index: 1;
-	opacity: .8;
-
-}
 .video-container{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: fixed;
+    top: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -100;
+    background-size: cover; 
 }
 
+.img{
+    max-width:50%;
+    max-height:50%;
+	z-index: 1;
+}
 
